@@ -1,0 +1,50 @@
+# 🌐 DNS Access Issues – Troubleshooting Guide
+
+If you're having trouble reaching **Genesis Radio** or the stream won't load, the issue may be with your DNS provider (the service that turns domain names into IP addresses).
+
+This happens more often than you'd think — and it's easy to fix.
+
+---
+
+## ✅ Quick Fix: Change Your DNS
+
+We recommend switching to one of these trusted, fast, privacy-respecting DNS providers:
+
+| Provider     | DNS Servers                 |
+|--------------|-----------------------------|
+| **Google**   | `8.8.8.8` and `8.8.4.4`      |
+| **Cloudflare** | `1.1.1.1` and `1.0.0.1`    |
+| **Quad9**    | `9.9.9.9`                   |
+
+---
+
+## 💻 How to Change Your DNS
+
+### Windows 10/11
+1. Open **Settings → Network & Internet**
+2. Click **Change adapter options**
+3. Right-click your active connection → **Properties**
+4. Select **Internet Protocol Version 4 (TCP/IPv4)** → Click **Properties**
+5. Choose **"Use the following DNS server addresses"**
+6. Enter:  
+   - Preferred: `1.1.1.1`  
+   - Alternate: `8.8.8.8`
+7. Save and reconnect
+
+---
+
+### macOS
+1. Go to **System Preferences → Network**
+2. Select your active network → Click **Advanced**
+3. Go to the **DNS** tab
+4. Click `+` and add:
+   - `1.1.1.1`
+   - `8.8.8.8`
+5. Apply changes and reconnect
+
+---
+
+### Linux (CLI)
+For a quick test:
+```bash
+sudo resolvectl dns eth0 1.1.1.1 8.8.8.8

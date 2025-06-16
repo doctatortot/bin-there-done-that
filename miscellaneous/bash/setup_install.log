@@ -1,0 +1,106 @@
+[INFO] Setup run at Thu May 22 08:38:58 AM EDT 2025
+[INSTALL] README.md copied to /home/doc/genesis-tools/miscellaneous/bash
+[INSTALL] db2_backup.sh installed to bin/
+[INSTALL] verifypxe.sh installed to bin/
+[INSTALL] krang_backup.sh installed to bin/
+[INSTALL] fix_queue3.sh installed to bin/
+[INSTALL] freezermove.sh installed to bin/
+[INSTALL] dasystemisdownyo.sh installed to bin/
+[INSTALL] genesis_sync_progress.sh installed to bin/
+[INSTALL] retention.sh installed to bin/
+[INSTALL] rsync_zfs_sync_helper.sh installed to bin/
+[INSTALL] pull_health_everywhere_ntp.sh installed to bin/
+[INSTALL] perms.sh installed to bin/
+[INSTALL] watchdog.sh installed to bin/
+[INSTALL] backup.sh installed to bin/
+[INSTALL] deldirectories.sh installed to bin/
+[INSTALL] dotheneedfuleverywhere.sh installed to bin/
+[INSTALL] tothebank.sh installed to bin/
+[INSTALL] restore.sh installed to bin/
+[INSTALL] fixsudoerseverywhere.sh installed to bin/
+[INSTALL] clean_media.sh installed to bin/
+[INSTALL] hardenit.sh installed to bin/
+[INSTALL] clean_orphans.sh installed to bin/
+[INSTALL] giteapushv3.sh installed to bin/
+[INSTALL] krang_modular_health.sh installed to bin/
+[INSTALL] venv-backup-script.sh installed to bin/
+[INSTALL] p1.sh installed to bin/
+[INSTALL] validate_zfs.sh installed to bin/
+[INSTALL] genesis_check.sh installed to bin/
+[INSTALL] sync-to-vault.sh installed to bin/
+[INSTALL] dr_telegram_alert.sh installed to bin/
+[INSTALL] mastodon_restart.sh installed to bin/
+[INSTALL] sync-trigger.sh installed to bin/
+[INSTALL] copydunkadunk.sh installed to bin/
+[INSTALL] kodakmomentproxmox.sh installed to bin/
+[INSTALL] mastodon_status-check.sh installed to bin/
+[INSTALL] get_telegram_id.sh installed to bin/
+[INSTALL] freezer.sh installed to bin/
+[INSTALL] do_the_needful.sh installed to bin/
+[INSTALL] kodakmoment.sh installed to bin/
+[INSTALL] sync.sh installed to bin/
+[INSTALL] disk_mitigator.sh installed to bin/
+[INSTALL] migrationtoblock.sh installed to bin/
+[INSTALL] dr_mirror_to_linode.sh installed to bin/
+[INSTALL] p2.sh installed to bin/
+[INSTALL] startemup.sh installed to bin/
+[INSTALL] malips.sh installed to bin/
+[INSTALL] verify_minio.sh installed to bin/
+[INSTALL] fix_queue2.sh installed to bin/
+[INSTALL] fix_queue.sh installed to bin/
+[INSTALL] zfs_bootstrap.sh installed to bin/
+[INSTALL] run_prune_from_krang.sh installed to bin/
+[INSTALL] upgrade.sh installed to bin/
+[INSTALL] clean_previewcards.sh installed to bin/
+[DOCGEN] db2_backup.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/db2_backup.md
+[DOCGEN] verifypxe.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/verifypxe.md
+[DOCGEN] krang_backup.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/krang_backup.md
+[DOCGEN] fix_queue3.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/fix_queue3.md
+[DOCGEN] freezermove.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/freezermove.md
+[DOCGEN] dasystemisdownyo.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/dasystemisdownyo.md
+[DOCGEN] genesis_sync_progress.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/genesis_sync_progress.md
+[DOCGEN] retention.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/retention.md
+[DOCGEN] rsync_zfs_sync_helper.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/rsync_zfs_sync_helper.md
+[DOCGEN] pull_health_everywhere_ntp.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/pull_health_everywhere_ntp.md
+[DOCGEN] perms.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/perms.md
+[DOCGEN] watchdog.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/watchdog.md
+[DOCGEN] backup.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/backup.md
+[DOCGEN] deldirectories.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/deldirectories.md
+[DOCGEN] dotheneedfuleverywhere.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/dotheneedfuleverywhere.md
+[DOCGEN] tothebank.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/tothebank.md
+[DOCGEN] restore.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/restore.md
+[DOCGEN] fixsudoerseverywhere.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/fixsudoerseverywhere.md
+[DOCGEN] clean_media.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/clean_media.md
+[DOCGEN] hardenit.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/hardenit.md
+[DOCGEN] clean_orphans.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/clean_orphans.md
+[DOCGEN] giteapushv3.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/giteapushv3.md
+[DOCGEN] krang_modular_health.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/krang_modular_health.md
+[DOCGEN] venv-backup-script.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/venv-backup-script.md
+[DOCGEN] p1.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/p1.md
+[DOCGEN] validate_zfs.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/validate_zfs.md
+[DOCGEN] genesis_check.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/genesis_check.md
+[DOCGEN] sync-to-vault.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/sync-to-vault.md
+[DOCGEN] dr_telegram_alert.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/dr_telegram_alert.md
+[DOCGEN] mastodon_restart.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/mastodon_restart.md
+[DOCGEN] sync-trigger.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/sync-trigger.md
+[DOCGEN] copydunkadunk.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/copydunkadunk.md
+[DOCGEN] kodakmomentproxmox.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/kodakmomentproxmox.md
+[DOCGEN] mastodon_status-check.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/mastodon_status-check.md
+[DOCGEN] get_telegram_id.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/get_telegram_id.md
+[DOCGEN] freezer.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/freezer.md
+[DOCGEN] do_the_needful.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/do_the_needful.md
+[DOCGEN] kodakmoment.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/kodakmoment.md
+[DOCGEN] sync.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/sync.md
+[DOCGEN] disk_mitigator.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/disk_mitigator.md
+[DOCGEN] migrationtoblock.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/migrationtoblock.md
+[DOCGEN] dr_mirror_to_linode.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/dr_mirror_to_linode.md
+[DOCGEN] p2.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/p2.md
+[DOCGEN] startemup.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/startemup.md
+[DOCGEN] malips.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/malips.md
+[DOCGEN] verify_minio.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/verify_minio.md
+[DOCGEN] fix_queue2.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/fix_queue2.md
+[DOCGEN] fix_queue.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/fix_queue.md
+[DOCGEN] zfs_bootstrap.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/zfs_bootstrap.md
+[DOCGEN] run_prune_from_krang.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/run_prune_from_krang.md
+[DOCGEN] upgrade.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/upgrade.md
+[DOCGEN] clean_previewcards.sh → /home/doc/genesis-tools/miscellaneous/bash/docs/clean_previewcards.md
