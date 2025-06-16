@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Genesis Radio - Full Service Status</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      color: #90e0ef;
+    }
+    .status-block {
+      margin: 1.5rem 0;
+    }
+    .service-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #eee;
+    }
+    .status {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    .online {
+      color: #00ff90;
+    }
+    .offline {
+      color: #ff4d4d;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📡 Genesis Hosting Service Status</h1>
+  <p>This page checks if our major services are reachable from your device.</p>
+
+  <div class="status-block">
+    <div class="service-name">🎵 Genesis Radio Website<br><small>https://genesis-radio.net</small></div>
+    <div id="radioStatus" class="status">⏳ Checking...</div>
+  </div>
+
+  <div class="status-block">
+    <div class="service-name">🐘 Mastodon<br><small>https://chatwithus.live</small></div>
+    <div id="mastodonStatus" class="status">⏳ Checking...</div>
+  </div>
+
+  <div class="status-block">
+    <div class="service-name">🗃 MinIO Object Storage<br><small>https://console.sshjunkie.com</small></div>
+    <div id="minioStatus" class="status">⏳ Checking...</div>
+  </div>
+
+  <div class="status-block">
+    <div class="service-name">🎙 AzuraCast<br><small>portal.genesishostingtechnologies.com</small></div>
+    <div id="azuraStatus" class="status">⏳ Checking...</div>
+  </div>
+
+  <div class="status-block">
+    <div class="service-name">🗣 TeamTalk Server<br><small>tt.themediahub.org</small></div>
+    <div id="teamtalkStatus" class="status">⏳ Checking...</div>
+  </div>
+
+  <div class="status-block">
+    <div class="service-name">🌐 Web Hosting Panel (DirectAdmin)<br><small>https://da.genesishostingtechnologies.com</small></div>
+    <div id="daStatus" class="status">⏳ Checking...</div>
+  </div>
+
+  <script>
+    function checkStatus(url, elementId) {
+      fetch(url, { method: 'HEAD', mode: 'no-cors' })
+        .then(() => {
+          document.getElementById(elementId).textContent = "✅ Online";
+          document.getElementById(elementId).className = "status online";
+        })
+        .catch(() => {
+          document.getElementById(elementId).textContent = "❌ Offline or Unreachable";
+          document.getElementById(elementId).className = "status offline";
+        });
+    }
+
+    checkStatus("https://genesis-radio.net", "radioStatus");
+    checkStatus("https://chatwithus.live", "mastodonStatus");
+    checkStatus("https://console.sshjunkie.com", "minioStatus");
+    checkStatus("https://portal.genesishostingtechnologies.com", "azuraStatus");
+    checkStatus("tt.themediahub.org", "teamtalkStatus");
+    checkStatus("https://da.genesishostingtechnologies.com", "daStatus");
+  </script>
+
+  <footer>
+    Genesis Hosting & Radio Help – Status updated live by your browser<br>
+    <a href="index.html">← Back to Help Index</a>
+  </footer>
+
+</body>
+</html>

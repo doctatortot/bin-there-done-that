@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DNS Access Issues – Genesis Radio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #90e0ef;
+    }
+    code {
+      background-color: #222;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #00d4ff;
+    }
+    pre {
+      background-color: #222;
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    a {
+      color: #00d4ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<center>   <h1>🎧 Genesis Radio Help Center</h1> </center> 
+<center>  <h1>🌐 DNS Access Issues</h1> </center> 
+  <p>If you're having trouble reaching <strong>Genesis Radio</strong> or the stream won't load, the issue may be with your DNS provider (the service that turns domain names into IP addresses).</p>
+  <p>This happens more often than you'd think — and it's easy to fix.</p>
+
+  <h2>✅ Quick Fix: Change Your DNS</h2>
+  <p>We recommend switching to one of these trusted, fast, privacy-respecting DNS providers:</p>
+
+  <table>
+    <tr><th>Provider</th><th>DNS Servers</th></tr>
+    <tr><td><strong>Google</strong></td><td><code>8.8.8.8</code> and <code>8.8.4.4</code></td></tr>
+    <tr><td><strong>Cloudflare</strong></td><td><code>1.1.1.1</code> and <code>1.0.0.1</code></td></tr>
+    <tr><td><strong>Quad9</strong></td><td><code>9.9.9.9</code></td></tr>
+  </table>
+
+  <h2>💻 How to Change Your DNS</h2>
+
+  <h3>Windows 10/11</h3>
+  <ol>
+    <li>Open <strong>Settings → Network & Internet</strong></li>
+    <li>Click <strong>Change adapter options</strong></li>
+    <li>Right-click your active connection → <strong>Properties</strong></li>
+    <li>Select <strong>Internet Protocol Version 4 (TCP/IPv4)</strong> → Click <strong>Properties</strong></li>
+    <li>Choose <strong>"Use the following DNS server addresses"</strong></li>
+    <li>Enter:
+      <ul>
+        <li>Preferred: <code>1.1.1.1</code></li>
+        <li>Alternate: <code>8.8.8.8</code></li>
+      </ul>
+    </li>
+  </ol>
+
+  <h3>macOS</h3>
+  <ol>
+    <li>Go to <strong>System Preferences → Network</strong></li>
+    <li>Select your active network → Click <strong>Advanced</strong></li>
+    <li>Go to the <strong>DNS</strong> tab</li>
+    <li>Click <code>+</code> and add:
+      <ul>
+        <li><code>1.1.1.1</code></li>
+        <li><code>8.8.8.8</code></li>
+      </ul>
+    </li>
+    <li>Apply changes and reconnect</li>
+  </ol>
+
+  <h3>Linux (CLI)</h3>
+  <p>For a quick test:</p>
+  <pre><code>sudo resolvectl dns eth0 1.1.1.1 8.8.8.8</code></pre>
+  <p>Or edit <code>/etc/resolv.conf</code>:</p>
+  <pre><code>nameserver 1.1.1.1
+nameserver 8.8.8.8</code></pre>
+
+  <h2>🔍 Still Not Working?</h2>
+  <ul>
+    <li>Try visiting: <a href="https://dnschecker.org" target="_blank">dnschecker.org</a> and search for <code>genesis-radio.net</code></li>
+    <li>If the site resolves but still won’t load, contact us — and tell us which DNS you’re using.</li>
+  </ul>
+
+  <h2>👀 Why This Happens</h2>
+  <p>Some ISPs use outdated, slow, or misconfigured DNS servers. This can cause:</p>
+  <ul>
+    <li>Outdated IP address cache</li>
+    <li>Failed SSL validation</li>
+    <li>Inability to resolve subdomains (like <code>stream.genesis-radio.net</code>)</li>
+  </ul>
+
+  <p>Switching DNS usually fixes this instantly.</p>
+
+  <footer>
+    🛠 <strong>Genesis Radio Tech Ops</strong><br>
+    “Because ‘turn it off and on again’ doesn’t work for DNS.”
+  </footer>
+</body>
+</html>

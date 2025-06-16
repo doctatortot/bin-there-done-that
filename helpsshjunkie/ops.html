@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis Hosting Technologies | Mission Control</title>
+    <style>
+        body {
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center;
+            animation: fadeIn 2s ease-in forwards;
+            opacity: 0;
+            background-color: #0a0a0a;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .banner {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #66ccff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(102, 204, 255, 0.7);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 1em;
+            color: #66ccff;
+        }
+
+        blockquote {
+            font-size: 1.2em;
+            color: #bbbbbb;
+            margin: 1em;
+        }
+
+        .commandment {
+            background: rgba(20, 20, 20, 0.8);
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 0 15px rgba(0, 153, 255, 0.4);
+            transition: box-shadow 0.5s ease;
+        }
+
+        .commandment:hover {
+            box-shadow: 0 0 25px rgba(0, 153, 255, 0.7);
+        }
+
+        iframe {
+            border: 2px solid #66ccff;
+            border-radius: 8px;
+            margin-top: 40px;
+            background: white;
+            color: black;
+            box-shadow: 0 0 20px rgba(102,204,255,0.4);
+        }
+
+        footer {
+            margin-top: 2em;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">GENESIS HOSTING TECHNOLOGIES | Mission Control</div>
+
+    <h1>🛡️ Genesis Hosting Technologies Ops Commandments</h1>
+    <blockquote><em>"Take snappy snaps, stay calm, fix it right."</em></blockquote>
+
+    <div class="commandment">
+        <h2>🛡️ Calm is Contagious</h2>
+        <p>In a crisis, your calmness is more valuable than any one command.</p>
+    </div>
+
+    <div class="commandment">
+        <h2>🧐 Scripts are Smarter Than Sleepy Admins</h2>
+        <p>Write scripts for tired hands and foggy brains. Recovery time is no time for guesswork.</p>
+    </div>
+
+    <div class="commandment">
+        <h2>📸 Snappy Snaps Save Lives</h2>
+        <p>Take frequent snapshots when in danger. Rollbacks are cheaper than regret.</p>
+    </div>
+
+    <div class="commandment">
+        <h2>🚦 Make Recovery Obvious</h2>
+        <p>You should never have to guess if a system is healthy. Status must be instantly visible.</p>
+    </div>
+
+    <div class="commandment">
+        <h2>⚙️ Expect Failure, Not Perfection</h2>
+        <p>Design for things to break. Build recovery in, not around.</p>
+    </div>
+
+    <div class="commandment">
+        <h2>🐢 Go Slow to Go Fast</h2>
+        <p>When systems are down, think slower, type slower. Mistakes cost more than patience.</p>
+    </div>
+
+    <div class="commandment">
+        <h2>📚 If You Didn't Write It Down, It Didn't Happen</h2>
+        <p>Every fix, every lesson, every runbook saves future you from suffering.</p>
+    </div>
+
+    <footer>
+        Genesis Radio Ops &bull; Inspired by John Northrup
+    </footer>
+
+    <div id="clock" style="position: fixed; bottom: 20px; right: 30px; font-size: 1.2em; color: #66ccff; font-family: monospace; opacity: 0.8;"></div>
+
+    <script>
+    function updateClock() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        document.getElementById('clock').textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+    </script>
+
+</body>
+</html>

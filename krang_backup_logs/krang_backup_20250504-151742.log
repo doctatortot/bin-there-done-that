@@ -1,0 +1,17 @@
+[Sun May  4 03:17:42 PM EDT 2025] 🔁 Starting Krang backup...
+[*] Syncing /mnt/data/genesis-tools/ → nexus/krang_assets
+sending incremental file list
+rsync: [sender] change_dir "/mnt/data/genesis-tools" failed: No such file or directory (2)
+rsync: [Receiver] mkdir "/root/nexus/krang_assets" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(791) [Receiver=3.2.7]
+[*] Syncing /etc/ → nexus/krang_etc-secure
+sending incremental file list
+rsync: [Receiver] mkdir "/root/nexus/krang_etc-secure" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(791) [Receiver=3.2.7]
+rsync: [sender] opendir "/etc/credstore.encrypted" failed: Permission denied (13)
+rsync: [sender] opendir "/etc/credstore" failed: Permission denied (13)
+[*] Syncing /home/doc/ → /home/doc/genesis-tools/krang_backup.sh
+sending incremental file list
+rsync: [Receiver] mkdir "/home/doc/genesis-tools/krang_backup.sh" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(791) [Receiver=3.2.7]
+[Sun May  4 03:17:46 PM EDT 2025] ✅ Krang backup completed.

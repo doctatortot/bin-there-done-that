@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1> Humpty Dumpty SMS Messages 845-668-9301  RELOAD PAGE TO SEE NEW MESSAGES </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for message in messages %}
+                <tr>
+                    <td>{{ message.sender }}</td>
+                    <td>{{ message.recipient }}</td>
+                    <td>{{ message.message }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

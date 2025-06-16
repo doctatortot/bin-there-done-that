@@ -1,0 +1,34 @@
+[Sun May  4 12:13:30 PM EDT 2025] 🔁 Starting MinIO-to-Vault sync job...
+[*] Syncing genesislibrary → nexus/genesislibrary-secure/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[*] Syncing assets_mastodon → nexus/assets_mastodon/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[*] Syncing genesisassets → nexus/genesisassets-secure/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[*] Syncing assets_azuracast → nexus/assets_azuracast/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[*] Syncing assets_archives → nexus/genesisarchives-secure/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[Sun May  4 12:13:32 PM EDT 2025] ✅ All MinIO buckets synced to The Vault.
+[Sun May  4 02:17:27 PM EDT 2025] 🔁 Starting MinIO-to-Vault sync job...
+[*] Syncing genesislibrary → nexus/genesislibrary-secure/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[*] Syncing assets_mastodon → nexus/assets_mastodon/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[*] Syncing genesisassets → nexus/genesisassets-secure/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[*] Syncing assets_azuracast → nexus/assets_azuracast/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[*] Syncing assets_archives → nexus/genesisarchives-secure/
+The source and destination cannot both be remote.
+rsync error: syntax or usage error (code 1) at main.c(1428) [Receiver=3.2.7]
+[Sun May  4 02:17:29 PM EDT 2025] ✅ All MinIO buckets synced to The Vault.

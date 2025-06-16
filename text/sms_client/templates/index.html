@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Received SMS Messages</title>
+    <meta http-equiv="refresh" content="60">
+</head>
+<body>
+<center>    
+    <h1>Humpty Dumpty SMS</h1>
+    <h3>(Page will refresh every 60 seconds)</h3>
+    <h3>Number is 845-714-0501</h3>
+</center>
+    <ul id="messages">
+        {% for msg in messages %}
+            <li style="margin-bottom: 20px;">
+                <p style="margin-bottom: 10px;">
+                    <strong>Message:</strong> {{ msg['body'] }}<br>
+                    <strong>Date/Time:</strong> {{ msg['received'] | datetimeformat }}<br>
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

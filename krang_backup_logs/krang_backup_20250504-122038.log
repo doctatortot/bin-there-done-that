@@ -1,0 +1,21 @@
+[Sun May  4 12:20:38 PM EDT 2025] 🔁 Starting Krang backup...
+[*] Syncing /mnt/data/genesis-tools/ → nexus/krang_tools-secure
+sending incremental file list
+rsync: [sender] change_dir "/mnt/data/genesis-tools" failed: No such file or directory (2)
+rsync: [Receiver] mkdir "/root/nexus/krang_tools-secure" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(791) [Receiver=3.2.7]
+[*] Syncing /etc/ → nexus/krang_etc-secure
+sending incremental file list
+rsync: [Receiver] mkdir "/root/nexus/krang_etc-secure" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(791) [Receiver=3.2.7]
+rsync: [sender] opendir "/etc/credstore.encrypted" failed: Permission denied (13)
+rsync: [sender] opendir "/etc/credstore" failed: Permission denied (13)
+rsync: [sender] write error: Broken pipe (32)
+rsync error: error in file IO (code 11) at io.c(849) [sender=3.2.7]
+[*] Syncing /home/doc/ → nexus/krang_home-secure
+sending incremental file list
+rsync: [Receiver] mkdir "/root/nexus/krang_home-secure" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(791) [Receiver=3.2.7]
+rsync: [sender] write error: Broken pipe (32)
+rsync error: error in file IO (code 11) at io.c(849) [sender=3.2.7]
+[Sun May  4 12:20:43 PM EDT 2025] ✅ Krang backup completed.

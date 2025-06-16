@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toot Scheduler</title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1> Toot Scheduler 2.0 </h1>
+    <h1>Welcome, {{ current_user.username }}!</h1>
+
+    <h2>Schedule a New Toot</h2>
+    <form method="POST" action="{{ url_for('add_toot') }}">
+        <textarea name="message" placeholder="Toot message" required></textarea><br>
+        <input type="time" name="toot_time" required>
+        <select name="day">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+            <option value="everyday">Everyday</option>
+        </select>
+        <button type="submit">Schedule Toot</button>
+    </form>
+
+    <h2>Scheduled Toots</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Message</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for toot in toots %}
+            <tr>
+                <td>{{ toot.message }}</td>
+                <td>{{ toot.day.capitalize() }}</td>
+                <td>{{ toot.toot_time }}</td>
+                <td>
+                    <form method="POST" action="{{ url_for('delete_toot', toot_id=toot.id) }}" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+<!-- Logout form in your template, e.g., base.html -->
+<form action="{{ url_for('logout') }}" method="post">
+    <button type="submit" class="btn btn-danger">Logout</button>
+</form>
+</body>
+</html>
+

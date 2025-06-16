@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genesis Radio - Firewall & Network Restrictions</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #90e0ef;
+    }
+    a {
+      color: #00d4ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background-color: #222;
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #00f2ff;
+    }
+    ul {
+      margin-left: 1.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<center>   <h1>🎧 Genesis Radio Help Center</h1> </center>
+<center>  <h1>🔐 Firewall & Network Restrictions</h1> </center> 
+
+  <p>Some networks (especially schools, workplaces, hotels, and public Wi-Fi) block streaming audio for bandwidth or content filtering reasons. If Genesis Radio works on your mobile data but not Wi-Fi, this may be the reason.</p>
+
+  <h2>📡 Common Symptoms</h2>
+  <ul>
+    <li>Website loads but the stream never connects</li>
+    <li>Streaming apps timeout or fail silently</li>
+    <li>Everything works fine on mobile data or a different network</li>
+  </ul>
+
+  <h2>✅ What You Can Try</h2>
+  <ul>
+    <li>Switch to mobile data (LTE/5G)</li>
+    <li>Try a VPN to bypass local network restrictions</li>
+    <li>If you're tech-savvy, change your DNS and test again (see <a href="dns.html">DNS guide</a>)</li>
+    <li>Ask your IT department (if applicable) to unblock ports:
+      <ul>
+        <li><code>8000</code> (HTTP stream)</li>
+        <li><code>8443</code> (HTTPS stream)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>🎧 Use Direct Stream Links</h2>
+  <p>If the web player fails, try loading the stream directly in a media player:</p>
+  <ul>
+    <li><code>http://stream.genesis-radio.net:8000/stream</code></li>
+    <li><code>https://stream.genesis-radio.net:8443/stream</code> (SSL)</li>
+  </ul>
+  <p>Open these in VLC, Winamp, or a modern browser.</p>
+
+  <h2>🛠 Still Not Working?</h2>
+  <p>Test from a different network, device, or VPN. If the stream plays there, it's almost certainly a network block on your primary connection.</p>
+
+  <footer>
+    Genesis Radio Help – Last updated May 2025<br>
+    <a href="index.html">← Back to Help Index</a>
+  </footer>
+
+</body>
+</html>

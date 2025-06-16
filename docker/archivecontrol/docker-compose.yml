@@ -1,0 +1,55 @@
+version: '3'
+services:
+  # Archive Control app
+  archivecontrol:
+    build: ./archivecontrol
+    ports:
+      - "5000:5000"
+    restart: always
+    environment:
+      - ENV=production
+
+  # Archive List app
+  archivelist:
+    build: ./archivelist
+    ports:
+      - "5001:5000"
+    restart: always
+    environment:
+      - ENV=production
+
+  # DB Check app
+  dbcheck:
+    build: ./dbcheck
+    ports:
+      - "5002:5000"
+    restart: always
+    environment:
+      - ENV=production
+
+  # Hosting Toot app
+  hostingtoot:
+    build: ./hostingtoot
+    ports:
+      - "5003:5000"
+    restart: always
+    environment:
+      - ENV=production
+
+  # Radio Toot app
+  radiotoot:
+    build: ./radiotoot
+    ports:
+      - "5004:5000"
+    restart: always
+    environment:
+      - ENV=production
+
+  # Text app
+  text:
+    build: ./text
+    ports:
+      - "5005:5000"
+    restart: always
+    environment:
+      - ENV=production

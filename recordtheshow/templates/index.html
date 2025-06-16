@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genesis Radio Recording Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+            padding: 2em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #0ff;
+            text-align: center;
+            margin-bottom: 2em;
+            text-shadow: 0 0 10px #0ff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5em;
+            justify-content: center;
+        }
+
+        .show-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 1.5em;
+            box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .show-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 18px rgba(0, 255, 255, 0.3);
+        }
+
+        .show-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #0cf;
+            margin-bottom: 0.5em;
+        }
+
+        .status {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        .status.inactive {
+            color: #ff4444;
+        }
+
+        .duration {
+            color: #ccc;
+            margin-bottom: 1em;
+        }
+
+        .schedule-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1.5em;
+        }
+
+        .schedule-list li {
+            margin: 0.25em 0;
+        }
+
+        button {
+            padding: 0.5em 1em;
+            font-weight: bold;
+            font-size: 1em;
+            background-color: #0cf;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #09c;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Genesis Radio: Recording Scheduler Control Panel</h1>
+    <div class="container">
+        {% for show, info in shows.items() %}
+        <div class="show-card">
+            <div class="show-name">{{ display_names.get(show, show) }}</div>
+            <div class="status {% if not info['recording'] %}inactive{% endif %}">
+                {{ '✅ Active' if info['recording'] else '❌ Inactive' }}
+            </div>
+            <div class="duration">Duration: {{ info['duration'] }} seconds</div>
+            <ul class="schedule-list">
+                {% for slot in info['schedule'] %}
+                    <li>{{ slot.day }} at {{ slot.time }}</li>
+                {% endfor %}
+            </ul>
+            <form method="POST" action="{{ url_for('toggle_recording', show_name=show) }}">
+                <button 
+                    type="submit" 
+                    aria-label="{{ 'Deactivate recording for ' + display_names.get(show, show) if info['recording'] else 'Activate recording for ' + display_names.get(show, show) }}"
+                >
+                    {{ 'Deactivate' if info['recording'] else 'Activate' }}
+                </button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
