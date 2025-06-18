@@ -16,8 +16,8 @@ SSH_KEY = "~/.ssh/genesis_healthcheck"
 ZFS_CMD = "zfs list -t snapshot -o name,creation -s creation"
 
 # === TELEGRAM CONFIG ===
-TELEGRAM_BOT_TOKEN="8178867489:AAH0VjN7VnZSCIWasSz_y97iBLLjPJA751k"
-TELEGRAM_CHAT_ID="1559582356"
+TELEGRAM_BOT_TOKEN=""
+TELEGRAM_CHAT_ID=""
 
 def send_to_telegram(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
